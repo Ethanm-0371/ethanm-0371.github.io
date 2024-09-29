@@ -2,12 +2,12 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Ethan Martín Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ethan Martín's Portfolio</title>
 
-  <link rel="stylesheet" type="text/css" href="assets/styles.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="assets/lotus_symbol.png">
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +18,293 @@
 </head>
 
 <body>
-    <p>THIS SITE IS UNDER CONSTRUCTION<span class="dots"></span></p>
-    <a href="assets/cv_ethan_martin.pdf" class="button-cv">Download CV</a>
+
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="assets/ethan_img.png" alt="" style="height: 60px; margin: 30px; border-radius: 100%;">
+            <h2>Ethan Martín's Portfolio</h2>
+        </div>
+        <ul class="navigation">
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <!--Introduction-->
+        <section class="introbox" id="intro">
+            <div class="introbox-text">
+                <h2>Hi, I'm</h2>
+                <h1><i>Ethan Martín</i></h1>
+                <p>Hello there! I am Ethan Martín and I'm a 21 year old student in CITM Barcelona, with a passion for
+                    video games and everything that surrounds them. I have a special love for game AI and procedural
+                    generation, and I am always willing to learn more!</p><br>
+                <a href="assets/cv_ethan_martin.pdf" class="button-cv">Download CV</a>
+            </div>
+            <div>
+                <img src="assets/ethan_img.png" alt="">
+            </div>
+        </section>
+
+        <!--Experience-->
+        <section class="experience" id="experience">
+            <h1><i>Experience and Education</i></h1>
+            <div class="experience-grid">
+                <div class="experience-box">
+                    <img src="img/logos/logo_unidesa_w.png" alt="" style="width: 180px;">
+                    <div>
+                        <h2>QA Internship</h2>
+                        <h3><i>Product Tester</i></h3>
+                        <h5><i>Jul - Aug 2022 / Jul - Aug 2023</i></h5>
+                        <h4>UNIDESA</h4>
+                    </div>
+                </div>
+                <div class="experience-box">
+                    <img src="img/logos/logo_upc.png" alt="" style="width: 100px;">
+                    <div>
+                        <h2>Videogames Design and Development degree</h2>
+                        <h3><i>4th year student</i></h3>
+                        <h5><i>September 2021 - Present</i></h5>
+                        <h4>CITM - UPC</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Projects-->
+        <section class="projects" id="projects">
+            <h1><i>Projects</i></h1>
+            <div class="projects-grid">
+                <div class="project-box"> <!--Alien: Nemesis-->
+                    <h3>Alien: Nemesis</h3>
+                    <h5>Project Description</h5>
+                    <p>Alien: Nemesis is one of the biggest projects I've worked on so far. It is a horror top-down
+                        shooter game based in the popular "<i>Alien</i>" franchise which was developed using our own
+                        game engine made from scratch, TheOneEngine.</p>
+                    <h5>Tech used</h5>
+                    <p>TheOneEngine, C++, C#, OpenGL, Mono, ImGUI, Wwise, ImGuizmo, Assimp, DevIL, GLEW, GLM </p>
+                    <h5>Role Description</h5>
+                    <p>During most of the development process, I was in charge of the development and maintainance of
+                        the Scripting Engine, both embedding the Mono library into the project and designing the whole
+                        scripting infrastructure, while also adding features to it as new needs arose. This has been one
+                        of my most thrilling challenges yet.</p>
+                    <p>In terms of the game, I was in charge of a rework for the entire behaviour of the Alien Queen,
+                        the final boss. I also coded the core behaviour for two of the enemies in the game.</p>
+                    <div style="display: flex; flex-direction: row; gap: 50px; justify-content: center; align-items: center; margin: 30px;">
+                        <div class="project-images">
+                            <video autoplay muted loop src="vid/Queen_Showcase_part1+part2.mp4"
+                                style="height: 216px; border-radius: 10px;"></video>
+                            <p>Some of the Queen's attack patterns</p>
+                        </div>
+                        <div class="project-images">
+                            <iframe src="https://www.youtube.com/embed/FczGKS7WU1w?si=zvV7LbYe0zxmuaXg"
+                                allowfullscreen></iframe>
+                            <p>Check out the official page <a href="https://shadow-wizard-games.github.io/Alien-Nemesis-Website/" style="color: white;"><i>here</i></a></p>
+                        </div>
+                        <div class="project-images">
+                            <img src="img/scripting_design.png" alt="" style="height: 216px; border-radius: 10px;">
+                            <p>Diagram of the design of the scripting system</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box"> <!--Jailed VR-->
+                    <h3>Jailed VR</h3>
+                    <h5>Project Description</h5>
+                    <p>Jailed VR is a VR escape room horror experience where you will have to solve puzzles in order to
+                        get the keys to ecape. It was made as a final project for our VR subject, but then polished and
+                        launched on itch.io. Test your wit while trying not to succumb to the unsettling sounds and
+                        creepy atmosphere of the place you have been <i>Jailed</i> in.</p>
+                    <h5>Tech used</h5>
+                    <p>Unity, XR Tolkit, C#</p>
+                    <h5>Role Description</h5>
+                    <p>In this project I was in charge of one of the three main lines of puzzles, which featured a
+                        scale, a pulsating heart and a cryptex (lock).</p>
+                    <div class="project-images">
+                        <iframe src="https://www.youtube.com/embed/Gyj4yftFy-Q?si=ZKd1bVKCzsF4jJP-"
+                            allowfullscreen></iframe>
+                        <p>Check the game out on <a href="https://xgauss05.itch.io/jailed-vr" style="color: white;">itch.io</a></p>
+                    </div>
+                </div>
+                <div class="project-box"> <!--Kingdom Engine-->
+                    <h3>Kingdom Engine</h3>
+                    <h5>Project Description</h5>
+                    <p>Kingdom is a 3D engine made from scratch, featuring a scripting module through the embedding of
+                        the <i><u><a href="https://www.mono-project.com/"
+                                    style="text-decoration: none; color: white;">Mono</a></u></i> library.</p>
+                    <h5>Tech used</h5>
+                    <p>C++, C#, Mono, OpenGL, SDL2, GLEW, ImGUI, DevIL, assimp, jsoncpp, nlohmann-json</p>
+                    <h5>Role Description</h5>
+                    <p>In this project I was the main responsible of the embedding of Mono and doing the base script
+                        structure, the "<i>Transform</i>" component, implementing mouse picking and raycasting, bounding
+                        boxes for the objects, primitives, the camera and helping troubleshoot problems with pointers
+                        and other technical difficulties.</p>
+                    <div class="project-images">
+                        <img src="gif/kingdom.gif" alt="">
+                        <p>Find the project on our <a href="https://github.com/CITM-UPC/Kingdom" style="color: white;">GitHub</a></p>
+                    </div>
+                </div>
+                <div class="project-box"> <!--Lost in Dreams-->
+                    <h3>Lost in Dreams</h3>
+                    <h5>Project Description</h5>
+                    <p>Lost in Dreams was created during the 2024 CITM Game Jam, with the theme "<i>Dreams and
+                            Nightmares</i>". In this game you'll find yourself travelling through worlds to advance in
+                        the levels in order to escape the realms of sleep.</p>
+                    <h5>Tech used</h5>
+                    <p>Unity, C#</p>
+                    <h5>Role Description</h5>
+                    <p>My main role in this project was designing and implementing the system to be able to change from
+                        one world to another, but I also coded the enemy behaviours, the small dialogue system and was
+                        in charge of scene managemnt.</p>
+                    <div class="project-images">
+                        <iframe height="200px" src="https://www.youtube.com/embed/G0aSwdu8icQ?si=6YPCz_zR9Vcf2XV2"
+                            allowfullscreen></iframe>
+                            <p>Check the game out on <a href="https://xgauss05.itch.io/lost-in-dreams" style="color: white;">itch.io</a></p>
+                    </div>
+                </div>
+                <div class="project-box"> <!--Super Metal Boy-->
+                    <h3>Super Metal Boy</h3>
+                    <h5>Project Description</h5>
+                    <p>Super Metal Boy is a precision platformer inspired by Super Meat Boy. In this game you'll find
+                        yourself wall-jumping, dashing and avoiding enemies in order to complete the levels before the
+                        time runs out.</p>
+                    <h5>Tech used</h5>
+                    <p>C++, Box2D, SDL2, Tiled, pugiXML and Optick</p>
+                    <h5>Role Description</h5>
+                    <p>In this project I was in charge of parsing and loading the levels, coding the wall jump and
+                        character animations, enemy AI and pathfinding as well as designing the level layouts and posing
+                        the character animation frames.</p>
+                    <div class="project-images">
+                        <img src="gif/supermetalboy.gif" alt="">
+                        <p>Check the game out on <a href="https://xgauss05.itch.io/super-metal-boy" style="color: white;">itch.io</a></p>
+                    </div>
+                </div>
+                <div class="project-box"> <!--Pokémon Pinball-->
+                    <h3>Pokémon Pinball</h3>
+                    <p>This project was a tribute made with eductional purposes. Featuring various of the original
+                        features of the level, you can play for a while and try to beat your best score!</p>
+                    <h5>Tech used</h5>
+                    <p>C++, Box2D and SDL2</p>
+                    <h5>Role Description</h5>
+                    <p>For this project I made the debug module, coded the physics of the launcher spring and helped
+                        tweaking the flippers.</p>
+                    <div class="project-images">
+                        <img src="gif/pkmnpinball.gif" alt="">
+                        <p>Find the project on our <a href="https://github.com/xGauss05/Pokemon-Pinball" style="color: white;">GitHub</a></p>
+                    </div>
+                </div>
+                <div class="project-box"> <!--No Time to Di(c)e-->
+                    <h3>No Time to Di(c)e</h3>
+                    <p>No Time to Di(c)e was our first self-organized project, submitted as part of the GMTK Game Jam
+                        2022, with the theme "<i>Roll of the Dice</i>". A run and gun game where you control a fed-up
+                        die
+                        in a quest for vengeance.</p>
+                    <h5>Tech used</h5>
+                    <p>C++, SDL2</p>
+                    <h5>Role Description</h5>
+                    <p>In this project I was in charge of the enemy AI, attacks and programming their animations. I also
+                        programmed the final boss.</p>
+                    <div class="project-images">
+                        <img src="gif/notimetodice.gif" alt="">
+                        <p>Check the game out on <a href="https://xgauss05.itch.io/no-time-to-dice" style="color: white;">itch.io</a></p>
+                    </div>
+                </div>
+                <div class="project-box"> <!--Guerrilla War Tribute-->
+                    <h3>Guerrilla War Tribute</h3>
+                    <p>This game was our first project, and it is a tribute to the arcade game <i>Guerrilla War</i>. You
+                        will be able to play the first level of the game and experience some adapted features.</p>
+                    <h5>Tech used</h5>
+                    <p>C++, SDL2</p>
+                    <h5>Role Description</h5>
+                    <p>For this project I coded most of the enemies AI and animations, camera behaviour and the core of
+                        the debug module while I also did the controller implementation (not the mapping).</p>
+                    <div class="project-images">
+                        <iframe height="200px" src="https://www.youtube.com/embed/IJbKSpz9Nc8?si=X31ie_gyUvKqqRhZ"
+                            allowfullscreen></iframe>
+                            <p>Find the project on our <a href="https://github.com/xGauss05/OwoGamesProject1" style="color: white;">GitHub</a></p>
+                    </div>
+                </div>
+        </section>
+
+        <!--Skills-->
+        <section class="skills" id="skills">
+            <h1><i>Skills</i></h1>
+            <div class="skills-grid">
+                <div class="skills-box">
+                    <h3>Code</h3>
+                    <img src="img/logos/logo_cplusplus.png" alt="">
+                    <img src="img/logos/logo_csharp.png" alt="">
+                    <img src="img/logos/logo_unity.png" alt="">
+                    <img src="img/logos/logo_mono.png" alt="">
+                    <img src="img/logos/logo_opengl.png" alt="">
+                    <img src="img/logos/logo_html.png" alt="">
+                    <img src="img/logos/logo_css.png" alt="">
+                    <img src="img/logos/logo_javascript.png" alt="">
+                    <img src="img/logos/logo_flutter.png" alt="">
+                </div>
+                <div class="skills-box">
+                    <h3>Software</h3>
+                    <img src="img/logos/logo_github.png" alt="">
+                    <img src="img/logos/visualstudio_logo.png" alt="">
+                    <img src="img/logos/visualcode_logo.png" alt="">
+                    <img src="img/logos/logo_photoshop.png" alt="">
+                    <img src="img/logos/logo_excel.png" alt="">
+                </div>
+                <div class="skills-box">
+                    <h3>Project Managemnt</h3>
+                    <img src="img/logos/logo_clickup.png" alt="">
+                    <img src="img/logos/hacknplan_logo.png" alt="">
+                    <img src="img/logos/logo_jira.png" alt="">
+                    <img src="img/logos/logo_trello.png" alt="">
+                </div>
+                <div class="skills-box">
+                    <h3>Art</h3>
+                    <img src="img/logos/logo_maya.png" alt="">
+                    <img src="img/logos/logo_substancepainter.png" alt="">
+                    <img src="img/logos/logo_zbrush.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--Contact-->
+        <section class="contact" id="contact">
+            <h1><i>Contact</i></h1>
+            <div class="contact-box">
+                <div>
+                    <a href="https://www.linkedin.com/in/ethan-martin-parra/"><img src="img/logos/logo_linkedin.png"
+                            alt=""></a>
+                    <a href="https://www.linkedin.com/in/ethan-martin-parra/">
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ethanm0371@gmail.com" target="_blank"><img
+                            src="img/logos/logo_gmail.png" alt=""></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ethanm0371@gmail.com" target="_blank">
+                        <p>Email</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/Ethanm-0371"><img src="img/logos/logo_github.png" alt=""></a>
+                    <a href="https://github.com/Ethanm-0371">
+                        <p>GitHub</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Ethan Martín</p>
+        <p>Email: ethanm0371@gmail.com</p>
+        <p>Tel: 667 25 16 48</p>
+    </footer>
 </body>
 
 </html>

@@ -1,41 +1,70 @@
-body {
-  background: linear-gradient(45deg, #212E68, #497085);
+header{
+  position: fixed;
+  z-index: 1000;
+  background: linear-gradient(45deg, #04060e, #172047);
+  width: 100%;
+  height: 80px;
+  top: 0px;
+  left: 0px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-p {
-  color: white;
+  justify-content: space-between;
   font-family: "Passion One", sans-serif;
-  font-size: 4vw;
-  font-weight: 700;
+  font-size: larger;
+  font-weight: lighter;
   font-style: italic;
 }
 
-.dots {
-  font-size: 4vw;
+.navigation{
+  display: flex;
+  list-style: none;
+  margin: 0px 50px;
+}
+.navigation a{
+  font-size: larger;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+body {
+  background: linear-gradient(45deg, #04060e, #172047);
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif */
+}
+
+.introbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 200px 100px;
+  justify-items: center;
+  align-items: center;
   position: relative;
 }
 
-.dots::after {
-  content: "";
-  animation: dotAnimation 2s infinite steps(1);
-  position: absolute;
+.introbox-text {
+  margin: 40px;
+}
+
+.introbox h1 {
+  font-size: 50px;
+}
+
+.introbox p {
+  font-size: 30px;
 }
 
 .button-cv{
   color: white;
   font-family: "Passion One", sans-serif;
   text-decoration: none;
-  background: linear-gradient(30deg, #32586d, #628da3);
+  background: linear-gradient(30deg, #131936, #1b3455);
   font-size: 1.6vw;
   padding: 0.6em 0.8em 0.6em 0.8em;
-  border: 0.1em, solid #282c49;
-  border-radius: 10em;
+  border: 0.1em, solid #6a96c0;
+  border-radius: 15px;
 }
 
 .button-cv:hover{
@@ -43,21 +72,131 @@ p {
   transition: ease all 0.3s;
 }
 
-@keyframes dotAnimation {
+.introbox img {
+  border-radius: 20px;
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+}
 
-  0%, 25% {
-    content: "";
-  }
+.experience {
+  margin: 150px;
+}
 
-  26%, 50% {
-    content: ".";
-  }
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}
 
-  51%, 75% {
-    content: "..";
-  }
+.experience-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 15px;
+  height: 200px;
+}
 
-  76%, 100% {
-    content: "...";
-  }
+.experience-box div{
+  width: 300px;
+}
+
+.projects {
+  margin: 150px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 40px 10px 40px;
+  border-radius: 15px;
+}
+
+.project-box h3 {
+  font-size: x-large;
+  font-style: italic;
+}
+.project-box h5 {
+  font-size: medium;
+  font-style: italic;
+}
+
+.project-images{
+  text-align : center;
+}
+
+.skills {
+  margin: 150px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.skills-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0px 30px 10px 30px;
+  width: 75%;
+  border-radius: 15px;
+}
+
+.skills-box img {
+  height: 80px;
+  padding: 0px 15px 15px 15px;
+}
+
+.contact {
+  margin: 150px;
+}
+
+.contact-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px 40px 10px 40px;
+  border-radius: 15px;
+  text-align : center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.contact-box img {
+  height: 100px;
+}
+.contact-box p {
+  color: white;
+  text-decoration: none;
+}
+
+footer{ 
+  background: black;
+  color: gray;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+iframe {
+  width: 640px;
+  height: 360px;
+  border-width: 0px;
+  border-radius: 10px;
 }
