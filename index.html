@@ -41,8 +41,8 @@
             <div class="introbox-text">
                 <h2>Hi, I'm</h2>
                 <h1><i>Ethan Martín</i></h1>
-                <p>Hello there! I am Ethan Martín and I'm a 22 year old student in CITM Barcelona, with a passion for
-                    video games and everything that surrounds them. I have a special love for game AI and procedural
+                <p>Hello there! I am Ethan Martín and I'm a 22 year old video game developer from Barcelona, with a 
+                    passion for everything surrounding this medium. I have a special love for game AI and procedural
                     generation, and I am always willing to learn more!</p><br>
                 <a href="assets/cv_ethan_martin.pdf" class="button-cv">Download CV</a>
             </div>
@@ -74,9 +74,9 @@
                 <div class="experience-box">
                     <img src="img/logos/logo_upc.png" alt="" style="width: 100px;">
                     <div>
-                        <h2>Videogames Design and Development degree</h2>
-                        <h3><i>4th year student</i></h3>
-                        <h5><i>September 2021 - Present</i></h5>
+                        <h2>Videogames Design and Development</h2>
+                        <h3><i>Bachelor's Degree (English)</i></h3>
+                        <h5><i>September 2021 - July 2025</i></h5>
                         <h4>CITM - UPC</h4>
                     </div>
                 </div>
@@ -142,6 +142,68 @@
                         <div class="project-images">
                             <img src="img/scripting_design.png" alt="" style="height: 216px; border-radius: 10px;">
                             <p>Diagram of the design of the scripting system</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box"> <!--Lights Out (Final Degree Project)-->
+                    <h3>Adaptation of Cyclic Level Generation to 3D Environments (Final Degree Project)</h3>
+                    <h5>Project Description</h5>
+                    <p>My Final Degree Project, named "Adaptation of Cyclic Level Generation to 3D Environments" was made
+                        as a part of the prototype for a third-person PvE shooter game called "Lights Out", made in collaboration with 
+                        <a href="https://xgauss05.github.io/portfolio/" style="color: white;"><i>Jonathan Cacay Llanes</i></a>. Following
+                        the steps of Dr. Joris Dormans and the Ludomotion team to create <a href="https://store.steampowered.com/app/506870/Unexplored" 
+                        style="color: white;"><i>Unexplored</i></a>, I adapted their level generation approach to allow for 3D generation.
+                    </p>
+                    <h5>Tech used</h5>
+                    <p>Unity, C#, Netcode for GameObjects</p>
+                    <h5>Role Description</h5>
+                    <p>For this project, I used transformational grammars to create the rules for the algorithm, I applied them as graph
+                        grammars to make the layout of the level, and later built the physical 3D representation of the resulting level graph. 
+                        To make the development process easier and the algorithm expandable, I also implemented a graph / rule creation pipeline 
+                        to streamline the process.</p>
+                    <div style="display: flex; flex-direction: row; gap: 30px; justify-content: center; align-items: center; margin: 30px;">
+                        <div class="project-images">
+                            <img src="img/lights_out.png" alt="" style="height: 216px; border-radius: 10px;">
+                            <p>Main Menu</p>
+                        </div>
+                        <div class="project-images">
+                            <iframe src="https://www.youtube.com/embed/ptIoQd7Fh2g?si=Oa_fZGsjTXXB850e"
+                                allowfullscreen></iframe>
+                                <p>Download my thesis <a href="assets/Adaptation_of_Cyclic_Level_Generation_to_3D_Environments_Ethan_Martin_TFG.pdf" style="color: white;">here</a></p>
+                            <p>Check out the prototype on <a href="https://github.com/xGauss05/TFG_Project" style="color: white;">GitHub</a></p>
+                        </div>
+                        <div class="project-images">
+                            <img src="img/lights_out_map.png" alt="" style="height: 216px; border-radius: 10px;">
+                            <p>Example of a generated level</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box"> <!--Primal Cycle-->
+                    <h3>Primal Cycle</h3>
+                    <h5>Project Description</h5>
+                    <p>Primal Cycle is a two-stick rogue-like shooter, developed for the GMTK Game Jam 2025. This 
+                        year's theme was <i>'Loop'</i>, so you will find yourself having to level up your character while
+                        traversing a looping dungeon which increases in difficulty with each iteration, until you 
+                        feel prepared enough to take on the final boss in the center of the map.
+                    </p>
+                    <h5>Tech used</h5>
+                    <p>Unity, C#, </p>
+                    <h5>Role Description</h5>
+                    <p>During this Jam I implemented the behaviour of most of the enemies, as well as taking care 
+                        of the final boss battle and the behaviour of the boss itself.</p>
+                    <div style="display: flex; flex-direction: row; gap: 30px; justify-content: center; align-items: center; margin: 30px;">
+                        <div class="project-images">
+                            <img src="img/primal_cycle_1.png" alt="" style="height: 216px; border-radius: 10px;">
+                            <p> </p>
+                        </div>
+                        <div class="project-images">
+                            <img src="img/primal_cycle.png" alt="" style="height: 338px; border-radius: 10px;">
+                            <p>This project was submitted as part of the <a href="https://itch.io/jam/gmtk-2025" style="color: white;">GMTK Game Jam 2025</a></p>
+                            <p>Check the game out on <a href="https://softdrawss.itch.io/primalcycle" style="color: white;">itch.io</a></p>
+                        </div>
+                        <div class="project-images">
+                            <img src="img/primal_cycle_2.png" alt="" style="height: 216px; border-radius: 10px;">
+                            <p> </p>
                         </div>
                     </div>
                 </div>
@@ -370,7 +432,7 @@
     <footer>
         <p>Ethan Martín</p>
         <p>Email: ethanm0371@gmail.com</p>
-        <p>Tel: 667 25 16 48</p>
+        <p>Tel: +34 667 25 16 48 (Spain)</p>
     </footer>
 </body>
 
